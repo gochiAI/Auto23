@@ -23,16 +23,16 @@ for i in src_list:
   if 'gochiusa_af' in i:
    js=open(i,'r').read()
    for i in js.splitlines():
-	if 'charaImgName = [' in i:
-		charaImgName_L=[i.replace("'","") for i in (i.replace("const charaImgName = [", '').replace('];', '')).split(",")]
-	if 'charaImg[i].src = ' in i:
-		charaImg_root=(i.replace("	charaImg[i].src = '",'').replace("'+charaImgName[i];",''))
-	if "const specialImgDir = '" in i:
-		specialImgDir_root=i.replace("const specialImgDir = '", "").replace("';", "")
-	if "const specialCharaName = ['" in i:
-		specialCharaName_L=[i.replace("'", "") for i in i.replace("const specialCharaName = ['", "").replace("];", "").split(',')]
-	if "const specialCharaImgType = ['" in i:
-		specialCharaImgType_L=[i.replace("'", "")for i in i.replace("const specialCharaImgType = [", "").replace("]", "").split(",")]
+    if 'charaImgName = [' in i:
+      charaImgName_L=[i.replace("'","") for i in (i.replace("const charaImgName = [", '').replace('];', '')).split(",")]
+    if 'charaImg[i].src = ' in i:
+      charaImg_root=(i.replace("	charaImg[i].src = '",'').replace("'+charaImgName[i];",''))
+    if "const specialImgDir = '" in i:
+      specialImgDir_root=i.replace("const specialImgDir = '", "").replace("';", "")
+    if "const specialCharaName = ['" in i:
+      specialCharaName_L=[i.replace("'", "") for i in i.replace("const specialCharaName = ['", "").replace("];", "").split(',')]
+    if "const specialCharaImgType = ['" in i:
+      specialCharaImgType_L=[i.replace("'", "")for i in i.replace("const specialCharaImgType = [", "").replace("]", "").split(",")]
 for i in charaImgName_L:
 	url=f'https://gochiusa.com/af/{charaImg_root}{i}'
 	job(f'wget {url} -o {base(url)}')
