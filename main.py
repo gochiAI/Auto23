@@ -20,7 +20,7 @@ with open(filename, 'r', encoding='utf-8') as f:
     src_list = [i.attrib['src'].replace('core_sys','gochiusa.com/bloom/core_sys') for i in script_tags if 'core_sys' in i.attrib['src']]
 for i in src_list:
  if 'gochiusa.com/af/core_sys/other/js' in i:
-  if 'gochiusa_af' in i:
+  if '2023' in i:
    js=open(i,'r').read()
    for i in js.splitlines():
     if 'charaImgName = [' in i:
