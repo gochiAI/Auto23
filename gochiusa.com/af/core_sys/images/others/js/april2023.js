@@ -741,18 +741,18 @@ function goStamp(){
 		  stampHomeButton = createTextElement('button','','Back to the Station');
 	const stampFormMax = 7,
 		  stampFormSeiza = [
-			  {key:"aries",val:"おひつじ座"},
-			  {key:"taurus",val:"おうし座"},
-			  {key:"gemini",val:"ふたご座"},
-			  {key:"cancer",val:"かに座"},
-			  {key:"leo",val:"しし座"},
-			  {key:"virgo",val:"おとめ座"},
-			  {key:"libra",val:"てんびん座"},
-			  {key:"scorpio",val:"さそり座"},
-			  {key:"sagittarius",val:"いて座"},
-			  {key:"capricorn",val:"やぎ座"},
-			  {key:"aquarius",val:"みずがめ座"},
-			  {key:"pisces",val:"うお座"},
+			  {key:"aries",val:"aries"},
+			  {key:"taurus",val:"taurus"},
+			  {key:"gemini",val:"gemini"},
+			  {key:"cancer",val:"cancer"},
+			  {key:"leo",val:"leo"},
+			  {key:"virgo",val:"virgo"},
+			  {key:"libra",val:"libra"},
+			  {key:"scorpio",val:"scorpio"},
+			  {key:"sagittarius",val:"sagittarius"},
+			  {key:"capricorn",val:"fapricorn"},
+			  {key:"aquarius",val:"aquarius"},
+			  {key:"pisces",val:"pisces"},
 		  ];
 	for(let i=1;i<=stampFormMax;i++){
 		const stampFormSelect = cElement('select','');
