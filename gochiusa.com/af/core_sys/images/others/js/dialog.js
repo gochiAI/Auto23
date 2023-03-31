@@ -1,148 +1,303 @@
 const gameStart = {
-	0:'旅は楽しんでおるかの？',
-	1:'さて　そろそろ一つ目の停車駅じゃ。<br>降りる客が何人かおる。',
-	2:'乗務員と一緒に声をかけてきてもらえんかの？',
-	3:'ヒントは降りる「右上の」駅名と乗客の誕生日じゃ。',
-	4:'駅の順番を覚えておけば、いいことがあるかもしれん。<br>がんばれよ。',
+
+	0:'Are you enjoying your trip？',
+
+	1:'Now,arrival the first stop station.<br>
+
+Some passengers are getting off.',
+
+	2:'Can you please go talk to them with the crew?',
+
+	3:'The clue is the name of the "upper right" station where you got off and the passenger's birthday.',
+
+	4:'Might be a good thing to remember the order of the stations.<br>fine',
+
 }
+
 const trainPassenger = {
+
 	tippy:{
+
 		correct:'',
-		incorrect:['来てくれて、ほんとうにありがとう。','わしもみんなに会いたかったぞ！','また元気に木組みの街へ、ラビットハウスへ、あの子たちに会いに来てやってくれ！'],
+
+		incorrect:['Thank you so much for coming.','I missed you all too！','Please come back to the Rabbit House and see them again!'],
+
 		name:'Tippy',
-		second: 'ラビットハウスマスター',
+
+		second: 'Rabbit house's master',
+
 		birthday:'???'
+
 	},
+
 	maya:{
-		correct:'この駅からお宝の匂いがする…私の頭のお宝センサーも反応してるよ！<br>はぁ！？アホ毛じゃないし！',
-		incorrect:'うーん　残念だけど、この駅からはお宝の匂いがしないね。',
+
+		correct:'I can smell the treasure from this station... my head treasure sensor is reacting too!<br>Huh! And it's not stupid hair!',
+
+		incorrect:'Hmmm, too bad, but I don't smell any treasures coming from this station...',
+
 		name:'Maya',
-		second: '星間トレジャーハンター',
+
+		second: 'Interstellar Treasure Hunter',
+
 		birthday:'8/8'
+
 	},
+
 	aoyama:{
-		correct:'いい小説のアイディア思いついちゃいました。<br>思い切って乗り込んでみるものですね。<br>うふふ　また来ま～す。',
-		incorrect:'うふふ　この駅じゃないですよ。<br>それにまだ何も小説のアイディアが思いついてません。　',
+
+		correct:'I came up with a good novel idea.<br>It was a good thing I took the plunge and stepped on board.<br>I'll be back again.',
+
+		incorrect:'haha...not this station.<br>And I haven't come up with any novel ideas yet.　',
+
 		name:'Aoyama',
-		second: '銀河小説家',
+
+		second: 'galactic novelist',
+
 		birthday:'10/27'
+
 	},
+
 	megu:{
-		correct:'ありがとう。<br>なんか木組みの街で過ごす夢を見た気がする…。<br>あれ　それともこれが夢？',
-		incorrect:'なんかここじゃない気がする…。<br>あれ　そもそも何でこんな電車に乗ってるんだっけ？',
+
+		correct:'thx<br>I think I had some kind of dream about spending time in a wooden town....<br>Is this or is this a dream？',
+
+		incorrect:'Something tells me this is not the place....<br>Oh, why am I on this train in the first place？',
+
 		name:'Megu',
-		second: '記憶喪失の天使',
+
+		second: 'Angel with amnesia',
+
 		birthday:'11/2'
+
 	},
+
 	mocha:{
-		correct:'ありがとう。<br>そうそう食堂車のパンに一つだけ言わせて。<br>………もちもちだったよ腕を上げたね。',
-		incorrect:'うぅーん？お姉ちゃんこの駅じゃないぞー？',
+
+		correct:'thx.<br>Oh yeah, I just want to say one thing about the bread in the dining car.<br>Your bread was sticky.
+
+You've improved your skills………',
+
+		incorrect:'Hm? That's not a station here!',
+
 		name:'Mocha',
-		second: 'コスモベーカリークイーン',
+
+		second: 'Cosmo Bakery Queen',
+
 		birthday:'3/13'
+
 	},
+
 	fuyu:{
-		correct:'ありがとう…また遊びに来るね。<br>今度はお弁当を作ってくるから一緒に食べよ。',
-		incorrect:'あ…この駅じゃない…。<br>もしかしてラビハ通いすぎ罪で強制退場…？',
+
+		correct:'Thanks...I'll come back to visit you.<br>
+
+I'll make lunch this time and we'll eat together.',
+
+		incorrect:'Ah...not this station...<br>Maybe I forced out for the crime of going to the Rabbit House too often.…？',
+
 		name:'Fuyu',
-		second: '星間グランドマスター',
+
+		second: 'Interstellar Grand Master',
+
 		birthday:'1/24'
+
 	},
+
 	yura:{
-		correct:'みんな～仲良くしすぎ～。<br>私は退散するね～。',
-		incorrect:'狙い外したね～<br>この駅じゃないよ～',
+
+		correct:'Everyone - too friendly!<br>I'm leaving.',
+
+		incorrect:'Wrong target.<br>Not this station!',
+
 		name:'Yura',
-		second: '「何でも」掃除係',
+
+		second: 'Cleaner of "everything"',
+
 		birthday:'1/12'
+
 	},
+
 	elu_natsume:{
+
 		correct:[
-			"わ～見てナツメちゃん。<br>ホームの駅員さんや飛んでる鳥まで双子っぽいよ。面白い駅だね。",
-			"って幸せの青い鳥じゃん！エル早く！捕まえなきゃ！"
+
+			"Wow - look at you, Natsume.<br>Even the station staff on the platform and the birds flying around look like twins. It's an interesting station.",
+
+			"That's a blue bird of happiness! Elle, come on! We have to catch it!"
+
 		],
+
 		incorrect:[
-			"この駅だっけ？",
-			"この駅じゃないよ"
+
+			"Was it this station?",
+
+			"Not this station."
+
 		],
+
 		name:'Elu & Natsume',
-		second: '旅する双子',
+
+		second: 'Traveling Twins',
+
 		birthday:'6/15'
+
 	},
+
 	rin:{
-		correct:'あっ…もう着いたんですか。<br>くっ…結局青山先生を見つけられなかった…！',
-		incorrect:'',
+
+		correct:'Oh...has the train arrived at the station already?<br>Damn...I couldn't find Aoyama Sensei after all...！',
+
+		incorrect:'Galaxy Editor',
+
 		name:'Rin',
-		second: '銀河編集者',
+
+		second: '',
+
 		birthday:'5/4'
+
 	},
+
 }
+
 const gameStation = {
+
 	taurus:{
-		station:"おうし座駅",
+
+		station:"Taurus station",
+
 		conductor:'chiya',
-		dialogue:[{"千夜":"はーい！拝見拝見　切符をはーいけん！<br>ついでに当車両をイメージした特製最中はいかがかしらー？"}],
+
+		dialogue:[{"chiya":"Hai! Let's see, let's I see your ticket!<br>And while you're at it, how about a special monaka with the image of this vehicle on it？"}],
+
 		passenger:'rin',
+
 	},
+
 	gemini:{
-		station:"ふたご座駅",
+
+		station:"Gemini station",
+
 		conductor:'syaro',
-		dialogue:[{シャロ:"食堂車にてハーブティーご注文のお客様に<br>パフォーマンスとスマイルをサービス中でーす！"}],
+
+		dialogue:[{syaro:"Performance and smiley faces are being served to customers who order herbal tea in the dining car!"}],
+
 		passenger:'elu_natsume',
+
 	},
+
 	capricorn:{
-		station:"やぎ座駅",
+
+		station:"Capricorn station",
+
 		conductor:'rize',
-		dialogue:[{リゼ:"救護室暇だぞ！<br>だれか具合の悪い人はいないのか！"}],
+
+		dialogue:[{rize:"I'm not busy in the first aid room!<br>Is anyone not feeling well!"}],
+
 		passenger:'yura',
+
 	},
+
 	aquarius:{
-		station:"みずがめ座駅",
+
+		station:"Aquarius Station",
+
 		conductor:'chino',
-		dialogue:[{チノ:"こちらサービスの当車両オリジナルブレンドです。<br>お…お口に合えばいいのですが…"}],
+
+		dialogue:[{chino:"This is our vehicle's original blend of service.<br>Oh...I hope it suits your palate."}],
+
 		passenger:'fuyu',
+
 	},
+
 	pisces:{
-		station:"うお座駅",
+
+		station:"pisces station",
+
 		conductor:'cocoa',
-		dialogue:[{ココア:"降車記念のお土産に銀河シュトーレンをどうぞ！<br>あとモフモフさせてくれたら嬉しいなー。"}],
+
+		dialogue:[{cocoa:"Take a Gallery Stollen as a souvenir of your disembarkation!<br>Also, I'd be happy if you let me mooch around."}],
+
 		passenger:'mocha',
+
 	},
+
 	scorpio:{
-		station:"さそり座駅",
+
+		station:"Scorpius Station",
+
 		conductor:'syaro_chiya',
-		dialogue:[{千夜:'お降りのお客様は二人よ。'},{シャロ:'わかってる。そっちの車両は任せたわよ。'}],
+
+		dialogue:[{chiya:'There are two guests getting off.'},{syaro:'I know. I'll take care of that vehicle.'}],
+
 		passenger:['megu','aoyama'],
+
 	},
+
 	leo:{
-		station:"しし座駅",
+
+		station:"Leo station",
+
 		conductor:'rize',
-		dialogue:[{リゼ:"救護室に子供の乗客たちが遊びに来て、<br>託児所みたいになってたぞ。<br>まぁ　いいんだけどな。"}],
+
+		dialogue:[{rize:"Child passengers came to play in the relief room,<br>it was like a day care center.<br>Well, that's okay."}],
+
 		passenger:'maya',
+
 	},
+
 	kigumi:{
+
 		station:"木組みの街駅",
+
 		conductor:'cocoa_chino',
-		dialogue:[{ココア:'懐かしのわが家だよ！'},{チノ:'みなさん忘れ物ありませんか？'}],
+
+		dialogue:[{cocoa:'It's our home from the past!'},{chino:'Has everyone forgotten anything?'}],
+
 		passenger:'tippy',
+
 	},
+
 }
+
 const gameEnding = {
-	0:'なんじゃ、ここはワシの降りる駅ではないぞ。',
-	1:'だが停車したということは、降りる客がいるはずじゃな。',
-	2:'自分の切符は確認したか？<br>そろそろ夢から覚める時じゃな。',
-	3:'そう、ここで降りるのはお前…そしてあの子たちじゃ。',
-	4:'ほら、あの子たちはすでに降りたようじゃ。<br>お前を呼んでおる。',
-	5:'はっはっは、夢の中まで騒がしい子達じゃ。',
-	6:'気を付けて降りるんじゃぞ。<br>この車両の事はワシに任せておけ。',
-	7:'…店とあの子たちのことは頼んだぞ。',
-	8:'タカヒロよ。',	
+
+	0:'What? This is not the station where I get off.',
+
+	1:'But if the train has stopped, there must be passengers getting off.',
+
+	2:'Did you check your own ticket?<br>It's time to wake up from this dream.',
+
+	3:'Yes, it's you who gets off here...and those children.',
+
+	4:'Look, I think they're already down.<br>
+
+They are calling for you.',
+
+	5:'Haha, they are noisy children even in their dreams.',
+
+	6:'Be careful getting off.<br>I'll take care of this train.',
+
+	7:'…Please take care of the store and those children.',
+
+	8:'Takahiro.',	
+
 }
+
 const stampAnswer = {
+
 	stamp1:"taurus",
+
 	stamp2:"gemini",
+
 	stamp3:"capricorn",
+
 	stamp4:"aquarius",
+
 	stamp5:"pisces",
+
 	stamp6:"scorpio",
+
 	stamp7:"leo",
+
 }
