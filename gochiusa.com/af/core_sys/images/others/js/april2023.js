@@ -750,7 +750,7 @@ function goStamp(){
 			  {key:"libra",val:"libra"},
 			  {key:"scorpio",val:"scorpio"},
 			  {key:"sagittarius",val:"sagittarius"},
-			  {key:"capricorn",val:"fapricorn"},
+			  {key:"capricorn",val:"capricorn"},
 			  {key:"aquarius",val:"aquarius"},
 			  {key:"pisces",val:"pisces"},
 		  ];
