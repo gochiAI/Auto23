@@ -37,36 +37,36 @@ body#home {
   background: center center no-repeat;
 }
 #home .bgBlock__blur, #home .bgBlock__image {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/start/bg.webp");
+  background-image: url("../../../../../core_sys/images/main/start/bg.webp");
 }
 .no-webp #home .bgBlock__blur, .no-webp #home .bgBlock__image {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/start/bg.jpg");
+  background-image: url("../../../../../core_sys/images/main/start/bg.jpg");
 }
 @media screen and (max-width: 999px) {
   #home .bgBlock__blur, #home .bgBlock__image {
-    background: url("https://gochiusa.com/af/core_sys/images/main/start/bg1_sp.webp") top center/100% auto no-repeat, url("https://gochiusa.com/af/core_sys/images/main/start/bg2_sp.webp") bottom center/100% auto no-repeat, #fff;
+    background: url("../../../../../core_sys/images/main/start/bg1_sp.webp") top center/100% auto no-repeat, url("../../../../../core_sys/images/main/start/bg2_sp.webp") bottom center/100% auto no-repeat, #fff;
   }
   .no-webp #home .bgBlock__blur, .no-webp #home .bgBlock__image {
-    background-image: url("https://gochiusa.com/af/core_sys/images/main/start/bg1_sp.png"), url("https://gochiusa.com/af/core_sys/images/main/start/bg2_sp.png");
+    background-image: url("../../../../../core_sys/images/main/start/bg1_sp.png"), url("../../../../../core_sys/images/main/start/bg2_sp.png");
   }
 }
 #game .bgBlock__blur, #game .bgBlock__image {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/game/bg.webp");
+  background-image: url("../../../../../core_sys/images/main/game/bg.webp");
 }
 .no-webp #game .bgBlock__blur, .no-webp #game .bgBlock__image {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/game/bg.jpg");
+  background-image: url("../../../../../core_sys/images/main/game/bg.jpg");
 }
 #stamp .bgBlock__blur, #stamp .bgBlock__image {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/stamp/bg.webp");
+  background-image: url("../../../../../core_sys/images/main/stamp/bg.webp");
 }
 .no-webp #stamp .bgBlock__blur, .no-webp #stamp .bgBlock__image {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/stamp/bg.jpg");
+  background-image: url("../../../../../core_sys/images/main/stamp/bg.jpg");
 }
 #info .bgBlock__blur, #present .bgBlock__blur, #info .bgBlock__image, #present .bgBlock__image {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/ending/info/bg.webp");
+  background-image: url("../../../../../core_sys/images/main/ending/info/bg.webp");
 }
 .no-webp #info .bgBlock__blur, .no-webp #present .bgBlock__blur, .no-webp #info .bgBlock__image, .no-webp #present .bgBlock__image {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/ending/info/bg.jpg");
+  background-image: url("../../../../../core_sys/images/main/ending/info/bg.jpg");
 }
 .bgBlock__blur {
   filter: blur(10px);
@@ -164,7 +164,7 @@ body#home {
   }
 }
 .op__main {
-  background: url("https://gochiusa.com/af/core_sys/images/main/common/bg.jpg") center center/cover;
+  background: url("../../../../../core_sys/images/main/common/bg.jpg") center center/cover;
   min-height: 50vh;
   display: flex;
   align-items: center;
@@ -224,7 +224,7 @@ body#home {
   width: 3.2em;
   height: 2.4em;
   transform: translate(-80%, -50%);
-  background: url("https://gochiusa.com/af/core_sys/images/main/op/kippu.png") center center/contain no-repeat;
+  background: url("../../../../../core_sys/images/main/op/kippu.png") center center/contain no-repeat;
   transition: 1s ease;
 }
 .op-button__01:not(.ticket)::before {
@@ -352,10 +352,10 @@ body#home {
   padding-left: 80px;
 }
 .start-menu__train {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/start/icon_train.png");
+  background-image: url("../../../../../core_sys/images/main/start/icon_train.png");
 }
 .start-menu__stamp {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/start/icon_stamp.png");
+  background-image: url("../../../../../core_sys/images/main/start/icon_stamp.png");
 }
 
 .game {
@@ -421,11 +421,11 @@ body#home {
 }
 .game-train__back button {
   padding-left: 1em;
-  background: url("https://gochiusa.com/af/core_sys/images/main/game/icon_back.webp") left center/auto 100% no-repeat;
+  background: url("../../../../../core_sys/images/main/game/icon_back.webp") left center/auto 100% no-repeat;
   filter: drop-shadow(2px 2px 0 #000);
 }
 .no-webp .game-train__back button {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/game/icon_back.png");
+  background-image: url("../../../../../core_sys/images/main/game/icon_back.png");
 }
 .game-train__station {
   grid-area: 3/7/4/8;
@@ -578,10 +578,10 @@ body#home {
 .map-passenger {
   position: relative;
   aspect-ratio: 49 / 18;
-  background: url("https://gochiusa.com/af/core_sys/images/main/game/map.webp") left center/contain no-repeat;
+  background: url("../../../../../core_sys/images/main/game/map.webp") left center/contain no-repeat;
 }
 .no-webp .map-passenger {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/game/map.png");
+  background-image: url("../../../../../core_sys/images/main/game/map.png");
 }
 .map-passenger button {
   position: absolute;
@@ -686,13 +686,13 @@ body#home {
   bottom: -3em;
   left: 0;
   right: 0;
-  background: url("https://gochiusa.com/af/core_sys/images/main/game/incorrect.png") center center/contain no-repeat;
+  background: url("../../../../../core_sys/images/main/game/incorrect.png") center center/contain no-repeat;
 }
 .passenger__dialogue.correct::after {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/game/correct.png");
+  background-image: url("../../../../../core_sys/images/main/game/correct.png");
 }
 .passenger__dialogue.thanks::after {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/game/thanks.png");
+  background-image: url("../../../../../core_sys/images/main/game/thanks.png");
 }
 .passenger__line {
   width: min(270px, 100%);
@@ -726,14 +726,14 @@ body#home {
 }
 
 .ending {
-  background: url("https://gochiusa.com/af/core_sys/images/main/ending/bg.webp") top center/cover no-repeat;
+  background: url("../../../../../core_sys/images/main/ending/bg.webp") top center/cover no-repeat;
   width: 100%;
   max-width: 100%;
   min-height: 100vh;
   aspect-ratio: 1920 / 1358;
 }
 .no-webp .ending {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/ending/bg.jpg");
+  background-image: url("../../../../../core_sys/images/main/ending/bg.jpg");
 }
 
 .info {
@@ -746,7 +746,7 @@ body#home {
   font-size: 1.6rem;
 }
 .no-webp .info {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/ending/info/bg.jpg");
+  background-image: url("../../../../../core_sys/images/main/ending/info/bg.jpg");
 }
 .info__image {
   grid-area: 2/2/3/3;
@@ -775,10 +775,10 @@ body#home {
   margin-bottom: 1em;
 }
 .info__button-stamp {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/ending/info/icon_stamp.png");
+  background-image: url("../../../../../core_sys/images/main/ending/info/icon_stamp.png");
 }
 .info__button-home {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/ending/info/icon_back.png");
+  background-image: url("../../../../../core_sys/images/main/ending/info/icon_back.png");
 }
 @media screen and (max-width: 999px) {
   .info {
@@ -923,16 +923,16 @@ body#home {
 }
 .stamp-form::before {
   transition: 1s ease;
-  background: url("https://gochiusa.com/af/core_sys/images/main/stamp/icon_correct.webp") top center/contain no-repeat;
+  background: url("../../../../../core_sys/images/main/stamp/icon_correct.webp") top center/contain no-repeat;
 }
 .no-webp .stamp-form::before {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/stamp/icon_correct.webp");
+  background-image: url("../../../../../core_sys/images/main/stamp/icon_correct.webp");
 }
 .stamp-form::after {
-  background: url("https://gochiusa.com/af/core_sys/images/main/stamp/icon.webp") top center/contain no-repeat;
+  background: url("../../../../../core_sys/images/main/stamp/icon.webp") top center/contain no-repeat;
 }
 .no-webp .stamp-form::after {
-  background-image: url("https://gochiusa.com/af/core_sys/images/main/stamp/icon.png");
+  background-image: url("../../../../../core_sys/images/main/stamp/icon.png");
 }
 .stamp-form:not(.correct)::before {
   opacity: 0;

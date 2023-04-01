@@ -459,7 +459,7 @@ function gamePassengerDot(e){
 		  passengerLine = cElement('div','passenger__line'),
 		  passengerName = createTextElement('div','passenger__name',_passengerDataName),
 		  passengerSecond = createTextElement('div','passenger__second',_passengerDataSecond),
-		  passengerBirthday = createTextElement('div','passenger__birthday','誕生日'+_passengerDataBirthday),
+		  passengerBirthday = createTextElement('div','passenger__birthday','birthday'+_passengerDataBirthday),
 		  passengerAction = cElement('div','passenger__action'),
 		  passengerCallBtn = cElement('button','');
 	status.prototype.passenger = _passenger;
@@ -468,9 +468,9 @@ function gamePassengerDot(e){
 	const passengerCallBtnTrue = passengerCallBtn.cloneNode(true),
 		  passengerCallBtnFalse = passengerCallBtn.cloneNode(true);
 	passengerCallBtnTrue.setAttribute('call','true')
-	passengerCallBtnTrue.append('声をかける')
+	passengerCallBtnTrue.append('Call out.')
 	passengerCallBtnFalse.setAttribute('call','false')
-	passengerCallBtnFalse.append('声をかけない')
+	passengerCallBtnFalse.append('No call out.')
 	
 	const mapPassenger = getByClass('map-passenger');
 	mapPassenger.style.pointerEvents = 'none';
@@ -669,7 +669,7 @@ function goEndingComics(){
 	
 	const comics = cElement('div','comics'),
 		  comicsInner = cElement('div','comics__inner'),
-		  comicsHead = createTextElement('div','comics-head','スペシャルムービー'),
+		  comicsHead = createTextElement('div','comics-head','Special Movie'),
 		  comicsSlide = cElement('div','comics-slide'),
 		  comicsSkip = cElement('div','comics-skip');
 	const slideMax = 13;
@@ -713,7 +713,7 @@ function goEndingInfo(){
 	removeInner(status.prototype.contents);
 	const info = cElement('div','info'),
 		  infoImage = createImgElement('div','info__image','core_sys/images/main/present/thumb/typeA.jpg'),
-		  infoText = createTextElement('div','info__text','ご乗車いただきありがとうございました。<br>ただいま、スタンプラリーを開催しております。<br>停車駅順に駅名を入力していただきますと<br>壁紙をプレゼントいたします。<br>ぜひご参加ください。'),
+		  infoText = createTextElement('div','info__text','Thank you for your ride.<br>We are now holding a stamp rally.<br>If you enter the station names in the order of stops,<br>you will receive a wallpaper.<br>We look forward to your participation.'),
 		  infoButton = cElement('div','info__button'),
 		  infoButtonStamp = createTextElement('button','info__button-stamp','Go To Stamp Rally'),
 		  infoButtonHome = createTextElement('button','info__button-home','Get off the train');
@@ -734,7 +734,7 @@ function goStamp(){
 	removeInner(status.prototype.contents);
 	const stamp = cElement('div','stamp'),
 		  stampHead = cElement('div','stamp__head'),
-		  stampHeadH2 = createTextElement('h2','','銀河特急スタンプラリー'),
+		  stampHeadH2 = createTextElement('h2','','Galaxy Express Stamp Rally'),
 		  stampList = cElement('div','stamp__list'),
 		  stampForm = cElement('div','stamp-form'),
 		  stampHome = cElement('div','stamp__home'),
