@@ -2,13 +2,11 @@ const gameStart = {
 
 	0:'Are you enjoying your trip？',
 
-	1:'Now,arrival the first stop station.<br>
-
-Some passengers are getting off.',
+	1:'Now,arrival the first stop station.<br>Some passengers are getting off.',
 
 	2:'Can you please go talk to them with the crew?',
 
-	3:'The clue is the name of the "upper right" station where you got off and the passenger's birthday.',
+	3:'The clue is the name of the "upper right" station where you got off and the passenger´s birthday.',
 
 	4:'Might be a good thing to remember the order of the stations.<br>fine',
 
@@ -24,7 +22,7 @@ const trainPassenger = {
 
 		name:'Tippy',
 
-		second: 'Rabbit house's master',
+		second: 'Rabbit house´s master',
 
 		birthday:'???'
 
@@ -32,9 +30,9 @@ const trainPassenger = {
 
 	maya:{
 
-		correct:'I can smell the treasure from this station... my head treasure sensor is reacting too!<br>Huh! And it's not stupid hair!',
+		correct:'I can smell the treasure from this station... my head treasure sensor is reacting too!<br>Huh! And it´s not stupid hair!',
 
-		incorrect:'Hmmm, too bad, but I don't smell any treasures coming from this station...',
+		incorrect:'Hmmm, too bad, but I don´t smell any treasures coming from this station...',
 
 		name:'Maya',
 
@@ -46,9 +44,9 @@ const trainPassenger = {
 
 	aoyama:{
 
-		correct:'I came up with a good novel idea.<br>It was a good thing I took the plunge and stepped on board.<br>I'll be back again.',
+		correct:'I came up with a good novel idea.<br>It was a good thing I took the plunge and stepped on board.<br>I´ll be back again.',
 
-		incorrect:'haha...not this station.<br>And I haven't come up with any novel ideas yet.　',
+		incorrect:'haha...not this station.<br>And I haven´t come up with any novel ideas yet.',
 
 		name:'Aoyama',
 
@@ -60,7 +58,7 @@ const trainPassenger = {
 
 	megu:{
 
-		correct:'thx<br>I think I had some kind of dream about spending time in a wooden town....<br>Is this or is this a dream？',
+		correct:'thx<br>I think I had some kind of dream about spending time in Half-timber town....<br>Is this or is this a dream？',
 
 		incorrect:'Something tells me this is not the place....<br>Oh, why am I on this train in the first place？',
 
@@ -74,11 +72,9 @@ const trainPassenger = {
 
 	mocha:{
 
-		correct:'thx.<br>Oh yeah, I just want to say one thing about the bread in the dining car.<br>Your bread was sticky.
+		correct:'thx.<br>Oh yeah, I just want to say one thing about the bread in the dining car.<br>Your bread was sticky.You´ve improved your skills………',
 
-You've improved your skills………',
-
-		incorrect:'Hm? That's not a station here!',
+		incorrect:'Hm? That´s not a station here!',
 
 		name:'Mocha',
 
@@ -90,9 +86,7 @@ You've improved your skills………',
 
 	fuyu:{
 
-		correct:'Thanks...I'll come back to visit you.<br>
-
-I'll make lunch this time and we'll eat together.',
+		correct:'Thanks...I´ll come back to visit you.<br>I´ll make lunch this time and we´ll eat together.',
 
 		incorrect:'Ah...not this station...<br>Maybe I forced out for the crime of going to the Rabbit House too often.…？',
 
@@ -106,7 +100,7 @@ I'll make lunch this time and we'll eat together.',
 
 	yura:{
 
-		correct:'Everyone - too friendly!<br>I'm leaving.',
+		correct:'Everyone - too friendly!<br>I´m leaving.',
 
 		incorrect:'Wrong target.<br>Not this station!',
 
@@ -146,7 +140,7 @@ I'll make lunch this time and we'll eat together.',
 
 	rin:{
 
-		correct:'Oh...has the train arrived at the station already?<br>Damn...I couldn't find Aoyama Sensei after all...！',
+		correct:'Oh...has the train arrived at the station already?<br>Damn...I couldn´t find Aoyama Sensei after all...！',
 
 		incorrect:'Galaxy Editor',
 
@@ -228,7 +222,7 @@ const gameStation = {
 
 		conductor:'syaro_chiya',
 
-		dialogue:[{chiya:'There are two guests getting off.'},{syaro:'I know. I'll take care of that vehicle.'}],
+		dialogue:[{chiya:'There are two guests getting off.'},{syaro:'I know. I´ll take care of that vehicle.'}],
 
 		passenger:['megu','aoyama'],
 
@@ -248,11 +242,11 @@ const gameStation = {
 
 	kigumi:{
 
-		station:"木組みの街駅",
+		station:"Half-timber Twon",
 
 		conductor:'cocoa_chino',
 
-		dialogue:[{cocoa:'It's our home from the past!'},{chino:'Has everyone forgotten anything?'}],
+		dialogue:[{cocoa:'It´s our home from the past!'},{chino:'Has everyone forgotten anything?'}],
 
 		passenger:'tippy',
 
@@ -266,17 +260,14 @@ const gameEnding = {
 
 	1:'But if the train has stopped, there must be passengers getting off.',
 
-	2:'Did you check your own ticket?<br>It's time to wake up from this dream.',
+	2:'Did you check your own ticket?<br>It´s time to wake up from this dream.',
 
-	3:'Yes, it's you who gets off here...and those children.',
-
-	4:'Look, I think they're already down.<br>
-
-They are calling for you.',
+	3:'Yes, it´s you who gets off here...and those children.',
+	4:'Look, I think they´re already down.<br>They are calling for you.',
 
 	5:'Haha, they are noisy children even in their dreams.',
 
-	6:'Be careful getting off.<br>I'll take care of this train.',
+	6:'Be careful getting off.<br>I´ll take care of this train.',
 
 	7:'…Please take care of the store and those children.',
 
